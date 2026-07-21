@@ -11,21 +11,21 @@ Pero aun asi quiero documentar todo. lo encuentro divertido...
 > Me parece impresionante las miles de maneras tan diferentes que los artistas tienen para describir este arte de tipo generativo. Pero todos coinciden en lo mismo... Que la aleatoriedad es uno de los factores mas importantes.
 >
 > Me encanta porque este tipo de arte es el que personalmente para mi representa mejro para mi lo inexplicable que son las emociones humanas.
-> A ver, me explico. Considero que las emociones son muy diferentes, pero no lo digo en el sentido de felicidad vs tristeza, sino que es diferente la felicidad porque lograste algo por tu cuenta y mereces todo el credito a la felicidad de porque tu mejor amiga finalmente se va a casar con la mejor persona del mundo....
-> ves? ambas son felicidades pero de maneras distintas. y ni siquiera nosotros conseguimos predecir el como nos va a afectar esa emocion en un momento determinado.
->Entonces, me gusta el arte generativo porque ABSOLUTAMENTE todos los artistas 
+> Ya que cuando sentimos emociones nunca sabremos que tan fuerte nos van a afectar dependiendi del contexto de la situación, lo mismo es aqui, todos los artistas mencionan que siempre tienen eideas al empezar pero que jamas saben como va a quedar el resultado final.
 
 ## 🌟 ACTIVIDAD 2
 
 - ✨ **ANÁLISIS CODIGO EXAMPLE 0.1: A TRADITIONAL RANDOM WALK**
 >
->
+> Este ejemplo me gusta y es bastante sencillo porque utiliza una probabilidad uniforme para seleccionar culaquier digito del 0 al 4 para mover o dibujar nuevas posiciones del cuadrito en el siguiente frame (sin borrar el frame anterior)
 
 ## 🌟 ACTIVIDAD 3
 
 - ✨ **DIFERENCIA ENTRE LA DISTRIBUCIÓN UNIFORME Y NO UNIFORME DE NÚMEROS ALEATORIOS**
 >
->
+> Cuando hablamos de la distribucion uniforme nos referimos a que haya una probabilidad igual o establedia para sacar un resultado en particular. Cuando hablamos de la no uniforme es cuando esa probabilidad para sacar cualquier valor se ve sesgado por cualquier circunstancia y deja de ser uniforme.
+> 
+> Hagamos un ejemplo con los numero aleatorios. supongamos que del 0 al 4 hay 0.25% de probabilidades de sacar cualquier numero, es bastante equitativo. peeeeeeeeeero, la cosa cambia si por ejemplo tengo valores desde el -5 hasta el 25, obviamente hay mas posibilidades de sacar un numero posiivo que uno negativo
 
 - ✨ **CÓDIGO CON DISTRIBUCIÓN NO UNIFORME **
 >
