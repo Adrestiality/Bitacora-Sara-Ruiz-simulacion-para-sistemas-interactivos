@@ -84,7 +84,7 @@ class Walker {
 ```
 ## 🌟 ACTIVIDAD 4 
 
-- ✨ **ANÁLISIS CODIGO EXAMPLE 0.1: A TRADITIONAL RANDOM WALK**
+- ✨ **SKETCH EN P5JS QUE REPRESENTE LA DISTRIBUCIÓN NORMAL**
 >
 > Okay okay, digamos que a la final hice algo similar pero diferente....
 >
@@ -152,7 +152,7 @@ function draw() {
   circle(x, y, 16);
 }
 ```
-> Despues de algunos intentos trate de hacer una carita feliz. no se si se entiende jajaja
+> Despues de algunos intentos trate de hacer una araña???. no se si se entiende jajaja
 >
 > <img width="667" height="662" alt="Captura de pantalla 2026-07-21 181315" src="https://github.com/user-attachments/assets/53b7b45d-2e7e-4f5c-ba47-70922ebf4481" />
 >
@@ -183,4 +183,197 @@ function draw() {
 }
 ```
 > Y consegui pintar esto (de algo me tenia que servir teoria del color)
+> 
 > <img width="657" height="648" alt="image" src="https://github.com/user-attachments/assets/094fd7e3-95af-43ab-b7ec-edb4018ff0c4" />
+
+## 🌟 ACTIVIDAD 5
+
+- ✨ **MODIFICACION DEL TRADITIONAL RANDOM WALK CON LÉVY FLIGHT**
+>
+> La verdad es que aunque entendi el concepto del levy flight, no super incorporrarlo por mi cuenta. hice uso de claude para la actividad. esto es lo que generó
+>
+```JavaScript
+// The Nature of Code
+// Daniel Shiffman
+// http://natureofcode.com
+let walker;
+function setup() {
+  createCanvas(640, 240);
+  walker = new Walker();
+  background(255);
+}
+function draw() {
+  walker.step();
+  walker.show();
+}
+class Walker {
+  constructor() {
+    this.x = width / 2;
+    this.y = height / 2;
+  }
+  show() {
+    stroke(0);
+    point(this.x, this.y);
+  }
+  step() {
+    // Genera un número siguiendo la distribución y = x
+    // (valores grandes son más probables que los chicos)
+    const r = this.levyValue();
+
+    // r va de 0 a 1. Lo escalamos para que sea el "tamaño de paso".
+    // Elevamos a una potencia para exagerar los saltos grandes y ocasionales.
+    const stepSize = pow(r, -2); // esto puede dar números MUY grandes a veces
+
+    const xstep = random(-1, 1) * stepSize;
+    const ystep = random(-1, 1) * stepSize;
+
+    this.x += xstep;
+    this.y += ystep;
+  }
+
+  // Distribución donde los valores grandes tienen más probabilidad (y = x)
+  levyValue() {
+    let x, y;
+    do {
+      x = random(1); // candidato
+      y = random(1); // "umbral" de aceptación
+    } while (y > x); // si el umbral es más alto que el candidato, se rechaza y se reintenta
+    return x;
+  }
+}
+```
+> y asi se ve
+> 
+> <img width="811" height="345" alt="image" src="https://github.com/user-attachments/assets/e1e16743-00d7-4ba2-a88d-ff9951ca6d06" />
+
+- ✨ **EXPLICACIÓN DE LA TÉCNICA**
+>
+> A ver, las primeras veces lo que hice fue tratar de poner el fragmento de codigo de la pagina de explicacion donde se establece la probabilidad de salto, pero la verdad es que no funciono. el codigo no parecia hacer nada particular o no funcionaba. lo que esperaba obtener en estos intentos era que el random walk ya no fuesen lineas sino puntos en lugares mas separados como minimo.
+>
+> Dado que mi iq no es suficiente, recurri a la ia. Claude aquí no se establece un valor fijo para crear el salto de distancia larga. Sino que el valor cambia en cada frame. Para ello la función llamada levyValue lo que hace es sacar dos valores aleatorios, x e y. Si x de chepa es menor que y, se rechaza ese intento y se vuelve a probar con un nuevo,  par de x e y (eso es lo que hace el while). Esto se repite hasta que x sea mayor o igual que y, recién ahí se acepta ese x y se lo devuelve como el valor final. x termina siendo el valor de r... Dentro de estos ciclos, hay un 90% de probabilidades de que salga un valor muy grande y solo un 10% de probabilidades de que salga un valor pequeño (es que necesitamos para la condicion de salto)
+>
+> Luego en la linea const stepSize = pow(r, -2), lo que hace es 1/r^2, de modo en que los valores grandes (que casi siempre salen) se traducen como movimientos super pequqños en el lienzo) y los valores peques (los dificiles de sacar) se traducen como movimientos enooormes en el lienzo.
+>
+> Funciona este metodo por el while que se hace en cada frame se puede hacer mas facil o mas dificil de superar.
+
+## 🌟 ACTIVIDAD 6
+
+- ✨ **RUIDO DE PERLIN APLICADO A UN NUEVO EJEMPLO**
+>
+> POR ALGUN MOTIVO ME COSTO ENTENDER EL RUIDO DE PERLIN. Y ES BIEN BOBO. No se porque empece a interpretar el ruido de perlin al revés. crei que el ruido de perlin era que los valores aleatorios eran completamente diferentes unos de si, Y ERA AL REVESSS, el ruido de perlin te da como de a conjuntos de numeros, pues, como que incrementa o disminuye valores pero muy suavemente, no de manera brusca, obviamente sin salirse de lo aleatorio
+>
+> Para el ejercicio hice uso 1000% de claude, porque queria visualizar el ruido de perlin en un entorno 3d. Algo asi como un generador de mapas 3d o de relieves 3d. Me gusta crear historias de fantasia, pero muchas veces me cuesta imagianrme el relieve de un entorno ficticio. siempre quise tener una especie de generador de mapas personalizado para hacer mis propios mapas pero en 3d, no como los genericos en 2d...entonces por eso pense que seria genial hacer el ejercicio en 3d....
+>
+> obviamente aqui no estoy personalizando nada, pero es cool ver un relieve simulado en 3d 
+>
+```JavaScript
+let cols, rows;
+let scl = 20;
+let w = 1200;
+let h = 1200;
+let terrain = [];
+let noiseScale = 0.1;
+function setup() {
+  createCanvas(700, 600, WEBGL);
+  cols = w / scl;
+  rows = h / scl;
+  let yoff = 0;
+  for (let y = 0; y < rows; y++) {
+    let xoff = 0;
+    let row = [];
+    for (let x = 0; x < cols; x++) {
+      row.push(map(noise(xoff, yoff), 0, 1, -100, 100));
+      xoff += noiseScale;
+    }
+    terrain.push(row);
+    yoff += noiseScale;
+  }
+}
+function draw() {
+  background(20);
+  orbitControl();
+  rotateX(PI / 3);
+  translate(-w / 2, -h / 2);
+  stroke(120, 200, 255);
+  noFill();
+  for (let y = 0; y < rows - 1; y++) {
+    beginShape(TRIANGLE_STRIP);
+    for (let x = 0; x < cols; x++) {
+      vertex(x * scl, y * scl, terrain[y][x]);
+      vertex(x * scl, (y + 1) * scl, terrain[y + 1][x]);
+    }
+    endShape();
+  }
+}
+```
+>
+> Se visualiza algo asi
+>
+> <img width="892" height="677" alt="image" src="https://github.com/user-attachments/assets/60723544-3c87-4098-a677-1af123ba22bc" />
+>
+> Lamentablemente tras ejecutarse normalmente aparece un error, y el programa se para debido a que siente multiples loops funcionando al tiempo.
+>
+> Segun entiendo es debido a la densidad de la malla con la que se trabaja. Si bajo la malla, la VERDAD la magia con el ruido de perlin se pierde
+>
+> PERO HEEEY, y si lo animamos? Veamos que logramos.
+>
+```JavaScript
+let cols, rows;
+let scl = 40;      // grilla menos densa para que la animación sea fluida
+let w = 1200;
+let h = 1200;
+let terrain = [];
+let noiseScale = 0.1;
+let zoff = 0;       // el offset que avanza con el tiempo
+
+function setup() {
+  createCanvas(700, 600, WEBGL);
+  pixelDensity(1);
+  cols = w / scl;
+  rows = h / scl;
+}
+
+function draw() {
+  background(20);
+  orbitControl();
+  rotateX(PI / 3);
+  translate(-w / 2, -h / 2);
+
+  // Recalcular el terreno cada frame, usando zoff como "tiempo"
+  let yoff = 0;
+  terrain = [];
+  for (let y = 0; y < rows; y++) {
+    let xoff = 0;
+    let row = [];
+    for (let x = 0; x < cols; x++) {
+      row.push(map(noise(xoff, yoff, zoff), 0, 1, -100, 100));
+      xoff += noiseScale;
+    }
+    terrain.push(row);
+    yoff += noiseScale;
+  }
+  zoff += 0.01; // avanzar de a poquito en la tercera dimensión
+
+  stroke(120, 200, 255);
+  noFill();
+  for (let y = 0; y < rows - 1; y++) {
+    beginShape(TRIANGLE_STRIP);
+    for (let x = 0; x < cols; x++) {
+      vertex(x * scl, y * scl, terrain[y][x]);
+      vertex(x * scl, (y + 1) * scl, terrain[y + 1][x]);
+    }
+    endShape();
+  }
+}
+```
+>
+> Lamentanblemente no puedo adjuntar video. pero se ve interesante
+>
+> He aqui unas capturas.
+>
+><img width="903" height="667" alt="image" src="https://github.com/user-attachments/assets/69636081-ce59-46f3-a9e9-43287d26835d" />
+><img width="897" height="682" alt="image" src="https://github.com/user-attachments/assets/d0c7349c-24a6-42e8-81df-e0dd2cd5cee4" />
+><img width="887" height="665" alt="image" src="https://github.com/user-attachments/assets/c32ea60e-019b-4436-bd91-36f5c961cd57" />
+>
+>Obviamente tuve que rebajarle a la malla aqui, pero siento que no se ve maaaal estando animado...
+
