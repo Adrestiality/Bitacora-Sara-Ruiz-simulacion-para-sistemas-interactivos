@@ -375,5 +375,40 @@ function draw() {
 ><img width="897" height="682" alt="image" src="https://github.com/user-attachments/assets/d0c7349c-24a6-42e8-81df-e0dd2cd5cee4" />
 ><img width="887" height="665" alt="image" src="https://github.com/user-attachments/assets/c32ea60e-019b-4436-bd91-36f5c961cd57" />
 >
->Obviamente tuve que rebajarle a la malla aqui, pero siento que no se ve maaaal estando animado...
+>Obviamente tuve que rebajarle a la densidad de la malla aqui, pero siento que no se ve maaaal estando animado...
+
+## 🌟 ACTIVIDAD 7: RETO DE DISEÑO
+
+- ✨ **FASE DE IDEACIÓN**
+>
+> Antes de empezar a tirar prompts a claude necesitaba una idea para trabajar. He de admitir que cuando me dicen "piensa que estos es para una feria o para una empresa" la verdad es que me bloquea durisimo. ya no me deja idear con completa libertad.
+>
+> Pese a ello, pude idear las dos siguientes ideas.
+>
+> 1: Mi primera opción fue crear una especie de simulador de evolucion de relieves del planeta. Es decir, en pantalla se veria como un territorio podria evolucionar (crear rios, montañas, valles, etc etc) y dichos comportamientos estarian definidos por varias distrubuciones diferentes.
+>
+> Para la interactividad estaba pensando que el usuario representara desastres naturales o cosas que afectan el flujo de la evolucion.
+>
+> Entonces, por ejemplo, en el plano se estan formando dos montañas y un rio, pero el usuario decide interactuar y manda un terremoto, o una inundación. afectando el flujo evolutivo. el rio pudo verse bloqueado por piedras de una de las montañas, o una de las montañas se derrumbo o etc etc. cosas asi
+>
+> 2. Mi segunda opcion esta inspirada en la novela del problema de los tres cuerpos. En resumen, existe un planeta lejano que esta orbitado por 3 estrellas inestables que irremediablemente acaban chocando con el planeta y termianndo miles de civilizaciones una y otra y otra vez. Asi que las personas de este planeta trataban de buscar una solucion para predecir el fin de sus eras. pero era imposible. La novela va de cientificos de la tierra tratando de resolver el sistema de ese planeta
+>
+> Entonces para la experiencia, pensaba hacer era recrear el problema de los tres cuerpos. Donde de manera estandar podemos ver las estrellas orbitando alrededor del planeta. y sus trayectorias tenian ruido de perlin y levy flight donde ocasionalente chocaban con el planeta y la experiencia se volvia a empezar.
+>
+> Para la interactividad pense en añadir botones o deslizadores que te permitian jugar a ser DIOS. ya que pense en que pudieras modificar el tamaño y velocidad constantemente del planeta y las estrellas. pero aun asi, pese a las modificaciones es inevitable que en algun momento todo se vuelva a chocar
+>
+
+- ✨ **FASE DE AGARRAME A PUÑOS CON CLAUDE**
+>
+> Mentiras, no me agarre a puños con claude. pero el codigo es tan largo que me toco usar 3 cuentas para hacer todo el codigo
+>
+> 1. PRIMER PROMPT
+>
+> El primer mensaje que le mande en un chat nuevo fue basicamente un recorderis de la novela del problema de los tres cuerpos. y una idea basica de lo que queria. una experiencia viusal donde se muestren las tres estrellas orbitando alrededor del planeta con su respectivo ruido de perlin y el salto de levy.
+>
+> Me tiro un codigo bastante completo, lindo esteticamente y funcional pero tenia los siguientes problemas: las estrellas nacian desde el centro con el planeta. por lo que la probabilidad de explotar desde el segundo 0 (la verdad vine a entender eso mucho despues. pero si pasaba que todo explotaba desde el segundo 0) y tambien sacaba unos errores
+>
+> 2. SEGUNDO PROMPT
+>
+> Para este segundo mensaje pedi corregir el error y el tema de la las explosiones inmediatas. 
 
