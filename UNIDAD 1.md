@@ -397,6 +397,7 @@ function draw() {
 >
 > Para la interactividad pense en añadir botones o deslizadores que te permitian jugar a ser DIOS. ya que pense en que pudieras modificar el tamaño y velocidad constantemente del planeta y las estrellas. pero aun asi, pese a las modificaciones es inevitable que en algun momento todo se vuelva a chocar
 >
+> Finalmente mi amiguito juan manuel me convencio de que la segunda idea era mejor. entonces me fui por esa
 
 - ✨ **FASE DE AGARRAME A PUÑOS CON CLAUDE**
 >
@@ -408,7 +409,17 @@ function draw() {
 >
 > Me tiro un codigo bastante completo, lindo esteticamente y funcional pero tenia los siguientes problemas: las estrellas nacian desde el centro con el planeta. por lo que la probabilidad de explotar desde el segundo 0 (la verdad vine a entender eso mucho despues. pero si pasaba que todo explotaba desde el segundo 0) y tambien sacaba unos errores
 >
-> 2. SEGUNDO PROMPT
+> 2. SEGUNDO Y TERCER PROMPT
 >
-> Para este segundo mensaje pedi corregir el error y el tema de la las explosiones inmediatas. 
+> Para los siguientes prompts le pedi a claude que arreglara los errores que salian y corregir las posiciones de inicio o spawn de las estrellas para evitar los choques inmediatos. Tambien le pedi que regulara la velocidad de las estrellas.
+>
+> 3. CUARTO Y QUINTO PROMPT
+>
+> Para este momento descubri que cuando las estrellas se movian tambien podian retrocerderse. lo cual era un poco extraño. Asi que para estos prompts le pedi que condicionara el movimiento de las estrellas a solamente hacia adelante y que regulara el radio de orbita para que las estrellas estuvieran mas pegados al planeta y fuese mas rapido los impactos para que no fuese tan monotono
+>
+> 4. SEXTO Y SÉPTIMO PROMPT
+> 
+> Ahora que la experiencia visual base estaba lista, faltaba la parte intercativa. Asi que los ultimos prompts fueron para pedir a claude que añadiera deslizadores que modificaran los tamaños o velocidades de los cuerpos. PERO, modificar las velocidades queria que implicara algo, es decir, que tuviera consecuencias. Asi que pedi que las velocidades al ser modificadas, aumentaran el ruido de perlin y aumentaran las probabilidades de salto de levy, inestabilizando incluso mas el sistema.
+>
+> Finalizando aqui el proceso de creación de la experiencia.
 
