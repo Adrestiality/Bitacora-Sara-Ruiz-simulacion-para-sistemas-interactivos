@@ -378,7 +378,7 @@ function draw() {
 >Obviamente tuve que rebajarle a la densidad de la malla aqui, pero siento que no se ve maaaal estando animado...
 
 ## 🌟 ACTIVIDAD 7: RETO DE DISEÑO
-
+<a name="evidencia5"></a>
 - ✨ **FASE DE IDEACIÓN**
 >
 > Antes de empezar a tirar prompts a claude necesitaba una idea para trabajar. He de admitir que cuando me dicen "piensa que estos es para una feria o para una empresa" la verdad es que me bloquea durisimo. ya no me deja idear con completa libertad.
@@ -430,14 +430,17 @@ function draw() {
 > Ahora veamos una explicacion fancy del trabaajo dada por claude.
 
 - ✨ **DESCRIPCIÓN DE LA EXPERIENCIA**
+<a name="evidencia3"></a>
 > La pieza traduce *El problema de los tres cuerpos* a la entrada de un festival de ciencia y creatividad: un planeta orbita en el centro de un sistema de tres estrellas cuyo movimiento es fundamentalmente impredecible. El visitante puede intervenir —ajustando tamaños y velocidades— pero nunca controlar del todo: cada ajuste altera las reglas de las *otras* dos estrellas, no solo la que toca. Cada movimiento sigue una regla matemática precisa, pero la combinación nunca es predecible: la incertidumbre no es ausencia de reglas.
-> 
+>
+<a name="evidencia2"></a>
 > **Conceptos combinados**
 >
 >- **Ruido de Perlin**: deriva angular y radial de cada estrella — caos suave que construye tendencia.
 >- **Vuelo de Lévy** (Mantegna): saltos súbitos e improbables que rompen el patrón.
 >- **Distribución normal**: una nube de "polvo" gaussiano por estrella, cuya dispersión es amplia justo tras un reinicio y se estrecha con el tiempo.
 >
+<a name="evidencia1"></a>
 >**Los cinco momentos, traducidos en comportamiento**
 >
 > **Posibilidad**: Tras un colapso, la nube gaussiana es amplia: casi cualquier posición cercana es plausible.
@@ -451,6 +454,7 @@ function draw() {
 > **Influencia**:  Los deslizadores no controlan directamente ninguna estrella: alteran las probabilidades de las otras dos (perturbación cruzada).
 > 
 - ✨ **CÓDIGO**
+<a name="evidencia4"></a>
 ```JavaScript
 // ---------------------------------------------------------
 // EL PROBLEMA DE LOS TRES CUERPOS
@@ -916,15 +920,30 @@ ENLACE + EDITOR: https://editor.p5js.org/Adrestiality/sketches/3xtbVnZ6R
 >**Encargo completo:** interpreto los cinco momentos dentro de un mismo sistema visual.
 > 
 > CUMPLE
+>
+> [evidencia 1](#evidencia1)
+>
 >**Simulación con intención:** utilizo al menos tres conceptos de la unidad para comunicar las ideas del encargo.
 >
 >	CUMPLE
+>
+>[evidencia  2](#evidencia2)
+>
 >**Interacción significativa:** la interacción modifica el comportamiento o las probabilidades del sistema, que también funciona sin intervención.
 >
 > CUMPLE
+>
+>[evidencia 3](#evidencia3)
+>
 >**Prototipo funcional:** la experiencia puede ejecutarse y recorrerse completa sin errores que impidan comprenderla.
 >
 > CUMPLE
+>
+>[evidencia 4](#evidencia4)
+>
 >**Proceso documentado:** la bitácora evidencia avances, decisiones, dificultades, soluciones, uso de IA y enlace al prototipo.
 >
 > CUMPLE
+>
+>[evidencia 5](#evidencia5)
+>
