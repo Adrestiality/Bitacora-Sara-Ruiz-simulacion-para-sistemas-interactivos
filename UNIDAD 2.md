@@ -635,15 +635,15 @@ function setup() {
 
 function windowResized() { resizeCanvas(windowWidth, windowHeight); }
 ```
-- ✨ **ENLACES**
-
-https://editor.p5js.org/Adrestiality/sketches/Bst2PHkQX
 
 - ✨ **FOTOS**
 <img width="1506" height="825" alt="image" src="https://github.com/user-attachments/assets/aba9f0ef-d4b5-4455-a5de-3edc09a668f7" />
 <img width="1506" height="825" alt="image" src="https://github.com/user-attachments/assets/efe26ed4-f892-42d1-ba5f-724d8ce6e99e" />
 <img width="1548" height="844" alt="Captura de pantalla 2026-08-04 182502" src="https://github.com/user-attachments/assets/0cc87b14-4773-475b-a063-fca08c756133" />
 
+- ✨ **ENLACES**
+
+https://editor.p5js.org/Adrestiality/sketches/Bst2PHkQX
 
 ## 🌟 ACTIVIDAD 8: AUTOEVALUACIÓN
 
