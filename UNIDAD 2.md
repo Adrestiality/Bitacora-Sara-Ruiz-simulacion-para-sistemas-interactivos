@@ -3,6 +3,7 @@
 ## 🌟 RETO DE DISEÑO
 
 - ✨ **FASE DE IDEACIÓN**
+<a name="evidencia5"></a>
 >
 > DIOS MIO. SOLO DIOS SABE CUANTAS VECES CAMBIÉ EL TEMA CON EL QUE IBA A TRABAJAR ESTA UNIDAD.
 
@@ -33,6 +34,7 @@
 > Aqui simplemente hice todo alreves. le dije a la ia que creara lo que quisiera, como quisiera, con los parametros, colores, controladores y comportamientos como quisiera. y cuando hiciera algo mas decente simp´lemente decirle que le añadiera personalidad a las particulas.
 
 - ✨ **DESCRIPCIÓN DE LA EXPERIENCIA**
+<a name="evidencia1"></a>
 >
 > **Tipos de partículas**
 >
@@ -42,6 +44,7 @@
 > 
 > Seleccioné **poner muchas Azules y Verdes (150 de cada una), varias Amarillas (120) y poquitas Rojas (80)** porque quiero hacer perceptible un grupo grande y tranquilo que es interrumpido por unas cuantas partículas molestamente activas. Espero que produzca grupitos grandes de colores que se asustan o se mueven cuando se les acercan las rojas
 
+<a name="evidencia3"></a>
 > **Matriz de atracción, repulsión o indiferencia**
 > 
 > Seleccioné **que las Verdes busquen a las Verdes, las Azules se huyan entre sí, las Amarillas se acompañen de lejos y las Rojas ignoren a sus hermanas rojas** porque quiero hacer perceptible que cada color tiene su propia personalidad. Espero que produzca bolitas bien apretadas de verdes, azules regadas por todo lado y rojas caminando solas sin rumbo.
@@ -57,6 +60,7 @@
 > 
 > Seleccioné **un freno suave (fricción) y un límite de velocidad no muy alto** porque quiero hacer perceptible que el ambiente las frena un poco. Espero que produzca que las partículas se vayan deteniendo poco a poco si nadie las empuja o las atrae, en lugar de moverse rápido para siempre.
 
+<a name="evidencia4"></a>
 > **Distribución inicial**
 > 
 > Seleccioné **que todas aparezcan regadas al azar y quietas al empezar** porque quiero hacer perceptible cómo empieza el orden desde el desorden. Espero que produzca que el espectador vea cómo se van buscando y organizando desde cero cada vez que inicia el programa.
@@ -66,6 +70,7 @@
 > Seleccioné **dejar las reglas básicas iguales pero cambiar un poquitico las fuerzas en cada reinicio** porque quiero hacer perceptible que es el mismo mundo pero en un día diferente. Espero que produzca que los comportamientos se reconozcan fácilmente, pero que los caminos nunca sean idénticos.
 
 > **Apariencia e interacción**
+<a name="evidencia2"></a>
 > 
 > Seleccioné **brillos suaves, temblores cuando se ponen nerviosas y una onda de empuje cuando el usuario hace clic** porque quiero hacer perceptible que reaccionan a lo que les pasa y al usuario. Espero que produzca que al tocar el lienzo sientas que estás asustando o interrumpiendo a las partículas.
 
@@ -99,6 +104,7 @@
 > 
 > Seleccioné **no dibujarles caminos fijos ni decirles a dónde ir, solo darles las reglas de cómo tratarse** porque quiero hacer perceptible la autoorganización. Espero que produzca formas raras, filas tipo serpiente o círculos que arman ellas solas sin que yo se los haya ordenado.
 
+<a name="evidencia6"></a>
 > **Una identidad reconocible entre sus diferentes resultados**
 > 
 > Seleccioné **que las Verdes siempre tiemblen al juntarse y las Rojas siempre sean las molestas** porque quiero hacer perceptible una personalidad clara en el proyecto. Espero que produzca que cualquier persona reconozca de inmediato cuál es tu proyecto sin importar cómo se hayan acomodado las fichas esta vez.
