@@ -647,39 +647,43 @@ https://editor.p5js.org/Adrestiality/sketches/Bst2PHkQX
 
 ## 🌟 ACTIVIDAD 8: AUTOEVALUACIÓN
 
->**La intención es clara y perceptible en el comportamiento.**
+>**La intención es clara y perceptible en el comportamiento. (5)**
 > 
 > Mas alla de los paneles de personaliacion que permite saber el estado y la potencia con la que hacen cualquier cosa, se evidencia con solo el material visual que las particulas siguen un comportamiento particular. que las rojas atacan y dispersan, que las azules se inactivan y que las amarillas y verdes se enloquecen
 >
 > [evidencia 1](#evidencia1)
 
->**Los tipos, cantidades, matriz y parámetros están justificados desde la intención.** 
+>**Los tipos, cantidades, matriz y parámetros están justificados desde la intención.(4)** 
 >
 >	Cuando pude empezar a planetar esta idea de diseño con el primer particle life mas decente que creo gemini, quise que se creara una especie de ecosistema de emociones. pero de esos escostimas creibles con comunidades y problemas. he de ahi el porque las particulas rojas son menos, mientras que los demas colores por ejemplo
 >
 >[evidencia  2](#evidencia2)
 
->**Comprendo y puedo modificar el funcionamiento técnico del sistema.** 
+>**Comprendo y puedo modificar el funcionamiento técnico del sistema.(2)** 
 >
 > Bajo este motivo es que se decidio crear los miles de deslizadores. Para generar ese control sobre la experiencia
 >
+> Aunque la verdad este concepto de esta unidad no me quedó muy claro debido a la matemática...
+>
 >[evidencia 3](#evidencia3)
 
->**El sistema produce variaciones con una identidad reconocible.**
+>**El sistema produce variaciones con una identidad reconocible.(5)**
 >
 > Aunque este ecosistema tiene cosas fijas durante cada reinicio, como el color y las propiedades que no movamos en el panel, las particulas solas siempre se comportan diferente. no tienen caminos trazados o designados, solo tienen un patron de comportamiento. ellas pueden moverse como quieran
 >
 >[evidencia 4](#evidencia4)
 
->**Experimenté, comparé, seleccioné y descarté con criterios claros**
+>**Experimenté, comparé, seleccioné y descarté con criterios claros.(5)**
 >
 > Jesus, 3 dias seguidos haciendo esto. Y eso que no tome capturas pq la verdad reconozco que me queda dificil estar tomando fotos cada vez que genero un prompt nuevo pq me da mas curiosidad de ver que hizo y que no hizo a pensar en llenar mas la bitacora
 >
 >[evidencia 5](#evidencia5)
 
->**Puedo distinguir y sustentar lo diseñado y lo emergente.**
+>**Puedo distinguir y sustentar lo diseñado y lo emergente.(4)**
 >
 > Los comportamientos una vez estan claros el sistema se vuelve caoticamente predecible. ya sabes que y porque va a pasar pero no sabes como
 >
 >[evidencia 6](#evidencia6)
 
+TOTAL; (5×20÷100)+(4×25÷100)+(2×20÷100)+(5×15÷100)+(5×10÷100)+(4×10÷100)
+NOTA: 4,0
