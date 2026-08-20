@@ -105,35 +105,35 @@ Fuerza de frenado directamente opuesta al vector de velocidad actual y proporcio
 
 Vector tridimensional constante que aplica una aceleración uniforme a todo el sistema
   
-  `F_wind = Vector3(wind.x, wind.y, wind.z) * windEnabled
+  `F_wind = Vector3(wind.x, wind.y, wind.z) * windEnabled`
 
 **🌿Atractor de Lorenz (Sistema Caótico):**
 
-Evalúa el sistema de ecuaciones diferenciales continuas de Lorenz con las constantes `sigma = 10`, `rho = 28` y `beta = 8/3
+Evalúa el sistema de ecuaciones diferenciales continuas de Lorenz con las constantes `sigma = 10`, `rho = 28` y `beta = 8/3`
   
   `dx/dt = sigma * (y - x)  
   `dy/dt = x * (rho - z) - y  
   `dz/dt = x * y - beta * z  
-  `F_lorenz = (v_lorenz - v) * lorenzStrength * lorenzEnabled
+  `F_lorenz = (v_lorenz - v) * lorenzStrength * lorenzEnabled`
 
 **🌿Curl Noise (Turbulencia Incompresible):**
 
 Calcula el rotacional de un campo escalar de ruido Perlin 3D (`mx_noise_vec3`) mediante aproximación por diferencias finitas. Garantiza divergencia cero (`div(F) = 0`), simulando un fluido incompresible sin puntos de colapso
   
-  `F_curl = rotacional(A) = (dAz/dy - dAy/dz, dAx/dz - dAz/dx, dAy/dx - dAx/dy) * curlStrength * curlEnabled
+  `F_curl = rotacional(A) = (dAz/dy - dAy/dz, dAx/dz - dAz/dx, dAy/dx - dAx/dy) * curlStrength * curlEnabled`
 
 **🌿Onda de Choque / Pulse Wave:**
   
 Onda esférica concéntrica cuyo radio crece linealmente con el tiempo (`r_wave = (time * speed) mod maxRadius. La magnitud sobre las partículas sigue una atenuación con distribución
   
-  `F_pulse = dir_pulse * exp(-((dist - r_wave)^2) / width^2) * (pulseStrength / (1.0 + 0.15 * dist)) * pulseEnabled
+  `F_pulse = dir_pulse * exp(-((dist - r_wave)^2) / width^2) * (pulseStrength / (1.0 + 0.15 * dist)) * pulseEnabled`
 
 **🌿Flujo de Bandada / Boids Flow Field:**
   
 Genera un campo de velocidad continuo basado en funciones trigonométricas entrelazadas en los tres ejes sin calcular vecindades
   
   `v_flow = Vector3(sin(y * k + t), cos(z * k + t), sin(x * k + t)) * 2.5  
-  `F_boids = (v_flow - v) * boidsStrength * boidsEnabled
+  `F_boids = (v_flow - v) * boidsStrength * boidsEnabled`
 
 **🌿Presión por Densidad (Grilla 3D / Spatial Hash):**
   Primero acumula la masa de partículas por celda en una grilla.Luego calcula el gradiente negativo de densidad (`-grad(rho)`) mediante diferencias finitas para empujar las partículas hacia las zonas de menor concentración
@@ -141,7 +141,7 @@ Genera un campo de velocidad continuo basado en funciones trigonométricas entre
   `grad_x = (rho[x+1,y,z] - rho[x-1,y,z]) / 2  
   `grad_y = (rho[x,y+1,z] - rho[x,y-1,z]) / 2  
   `grad_z = (rho[x,y,z+1] - rho[x,y,z-1]) / 2  
-  `F_pressure = -Vector3(grad_x, grad_y, grad_z) * pressureStrength * pressureEnabled
+  `F_pressure = -Vector3(grad_x, grad_y, grad_z) * pressureStrength * pressureEnabled`
 
 
 - ✨ **Registro de pruebas**
