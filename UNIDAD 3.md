@@ -13,7 +13,45 @@
 >ESTADOS:
 >
 >
+>FÍSICAS 
 >
+>**Radial (Atracción/Repulsión):** 
+>
+>Atrae las partículas hacia el cursor o las repele lejos de él. Es fuerte de cerca, débil de lejos e incluye un suavizado para evitar velocidades infinitas en el centro.
+>
+>**Vórtice:** 
+>
+>Aplica un impulso perpendicular a la dirección radial, haciendo que las partículas giren en espiral alrededor del punto central en lugar de ir en línea recta.
+>
+>
+>**Fricción (Drag):** 
+>
+>Funciona como la resistencia del aire o agua. Frena las partículas proporcionalmente a su velocidad para evitar que aceleren sin control.
+>
+>**Viento:** 
+>
+>Empuja constante y uniformemente a todas las partículas en una dirección específica del espacio 3D.
+>
+>**Atractor de Lorenz:** 
+>
+> Guía las partículas a lo largo de un sistema dinámico caótico, creando un patrón de movimiento con la clásica forma de "alas de mariposa".
+>
+>**Turbulencia (Curl Noise):** 
+>
+>Genera remolinos y ráfagas suaves mediante un campo de fluido incompresible, evitando que las partículas colapsen o se acumulen.
+>
+>**Onda de Choque (Pulse):** 
+>
+>Empuja las partículas hacia afuera mediante una onda esférica que nace en el origen y se expande periódicamente.
+>
+>**Flujo de Bandada (Boids):** 
+>
+>Coordina el movimiento colectivo como un cardumen de peces mediante ondas trigonométricas globales, sin requerir cálculos individuales entre partículas.
+>
+>**Presión por Densidad:** 
+>
+> Mide la concentración de partículas en una grilla 3D y empuja la materia desde las zonas muy pobladas hacia las áreas más vacías.
+
 >CONTROLES:
 >
 | Tecla / Acción | Efecto Principal en la Simulación |
