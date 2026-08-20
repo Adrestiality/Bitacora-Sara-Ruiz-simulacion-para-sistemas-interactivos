@@ -10,10 +10,17 @@
 
 - ✨ **Mapa del sistema**
 
->ESTADOS:
+>**ESTADOS**:
 >
+>**Morfing entre Geometrías:** 
 >
->FÍSICAS 
+>Cambia de forma (Esfera, Cubo o Reloj de Arena) mediante una interpolación suave de 1.5 segundos entre el punto actual y el objetivo.Las fuerzas físicas siguen activas durante la transición para mantener un movimiento orgánico
+>
+> **Estado de Pausa e Inercia:** 
+>
+>Permite congelar la simulación o reiniciar las velocidades y posiciones a su distribución geométrica base.
+>
+>**FÍSICAS**
 >
 >**Radial (Atracción/Repulsión):** 
 >
