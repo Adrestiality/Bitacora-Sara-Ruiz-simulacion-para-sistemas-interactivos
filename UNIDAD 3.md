@@ -10,57 +10,57 @@
 
 - ✨ **Mapa del sistema**
 
->**ESTADOS**:
->
->**Morfing entre Geometrías:** 
->
->Cambia de forma (Esfera, Cubo o Reloj de Arena) mediante una interpolación suave de 1.5 segundos entre el punto actual y el objetivo.Las fuerzas físicas siguen activas durante la transición para mantener un movimiento orgánico
->
-> **Estado de Pausa e Inercia:** 
->
->Permite congelar la simulación o reiniciar las velocidades y posiciones a su distribución geométrica base.
+**ESTADOS**:
 
->**FÍSICAS**
->
->**Radial (Atracción/Repulsión):** 
->
->Atrae las partículas hacia el cursor o las repele lejos de él. Es fuerte de cerca, débil de lejos e incluye un suavizado para evitar velocidades infinitas en el centro.
->
->**Vórtice:** 
->
+**Morfing entre Geometrías:** 
+
+Cambia de forma (Esfera, Cubo o Reloj de Arena) mediante una interpolación suave de 1.5 segundos entre el punto actual y el objetivo.Las fuerzas físicas siguen activas durante la transición para mantener un movimiento orgánico
+
+**Estado de Pausa e Inercia:** 
+
+Permite congelar la simulación o reiniciar las velocidades y posiciones a su distribución geométrica base.
+
+**FÍSICAS**
+
+**Radial (Atracción/Repulsión):** 
+
+Atrae las partículas hacia el cursor o las repele lejos de él. Es fuerte de cerca, débil de lejos e incluye un suavizado para evitar velocidades infinitas en el centro.
+
+**Vórtice:** 
+
 >Aplica un impulso perpendicular a la dirección radial, haciendo que las partículas giren en espiral alrededor del punto central en lugar de ir en línea recta.
->
->
->**Fricción (Drag):** 
->
->Funciona como la resistencia del aire o agua. Frena las partículas proporcionalmente a su velocidad para evitar que aceleren sin control.
->
->**Viento:** 
->
->Empuja constante y uniformemente a todas las partículas en una dirección específica del espacio 3D.
->
->**Atractor de Lorenz:** 
->
-> Guía las partículas a lo largo de un sistema dinámico caótico, creando un patrón de movimiento con la clásica forma de "alas de mariposa".
->
->**Turbulencia (Curl Noise):** 
->
->Genera remolinos y ráfagas suaves mediante un campo de fluido incompresible, evitando que las partículas colapsen o se acumulen.
->
->**Onda de Choque (Pulse):** 
->
->Empuja las partículas hacia afuera mediante una onda esférica que nace en el origen y se expande periódicamente.
->
->**Flujo de Bandada (Boids):** 
->
->Coordina el movimiento colectivo como un cardumen de peces mediante ondas trigonométricas globales, sin requerir cálculos individuales entre partículas.
->
->**Presión por Densidad:** 
->
-> Mide la concentración de partículas en una grilla 3D y empuja la materia desde las zonas muy pobladas hacia las áreas más vacías.
 
->**CONTROLES**:
->
+
+**Fricción (Drag):** 
+
+Funciona como la resistencia del aire o agua. Frena las partículas proporcionalmente a su velocidad para evitar que aceleren sin control.
+
+**Viento:** 
+
+Empuja constante y uniformemente a todas las partículas en una dirección específica del espacio 3D.
+
+**Atractor de Lorenz:** 
+
+Guía las partículas a lo largo de un sistema dinámico caótico, creando un patrón de movimiento con la clásica forma de "alas de mariposa".
+
+**Turbulencia (Curl Noise):** 
+
+Genera remolinos y ráfagas suaves mediante un campo de fluido incompresible, evitando que las partículas colapsen o se acumulen.
+
+**Onda de Choque (Pulse):** 
+
+Empuja las partículas hacia afuera mediante una onda esférica que nace en el origen y se expande periódicamente.
+
+**Flujo de Bandada (Boids):** 
+
+Coordina el movimiento colectivo como un cardumen de peces mediante ondas trigonométricas globales, sin requerir cálculos individuales entre partículas.
+
+**Presión por Densidad:** 
+
+Mide la concentración de partículas en una grilla 3D y empuja la materia desde las zonas muy pobladas hacia las áreas más vacías.
+
+**CONTROLES**:
+
 | Tecla / Acción | Efecto Principal en la Simulación |
 | :--- | :--- |
 | **1** | Morfing a forma de **Esfera 3D** |
@@ -80,12 +80,9 @@
 | **Click Izquierdo (Mouse)** | Fuerza de **Atracción Radial** instantánea hacia la posición del cursor (Strength = 8.0) |
 | **Click Derecho (Mouse)** | Fuerza de **Repulsión Radial** instantánea desde la posición del cursor (Strength = -6.0) |
 | **Mover Cursor** | Actualiza la posición del **Atractor / Helper 3D** proyectado sobre el plano Z = 0 mediante Raycasting |
->
+
 
 - ✨ **Ficha de fuerzas**
-
->
->## Fuerzas Físicas (Formulación Matemática en Markdown)
 
 * **Fuerza Radial (Atracción / Repulsión):**
   Calcula un vector unitario hacia el atractor y escala la magnitud inversamente al cuadrado de la distancia, sumando un término de suavizado (`softening`) en el denominador para evitar divisiones por cero[span_0](start_span)[span_0](end_span):
