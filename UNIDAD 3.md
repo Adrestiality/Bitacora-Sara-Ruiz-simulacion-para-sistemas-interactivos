@@ -10,7 +10,7 @@
 
 - ✨ **Mapa del sistema**
 
-**ESTADOS**:
+**🌿ESTADOS**:
 
 **Morfing entre Geometrías:** 
 
@@ -20,7 +20,7 @@ Cambia de forma (Esfera, Cubo o Reloj de Arena) mediante una interpolación suav
 
 Permite congelar la simulación o reiniciar las velocidades y posiciones a su distribución geométrica base.
 
-**FÍSICAS**
+**🌿FÍSICAS**
 
 **Radial (Atracción/Repulsión):** 
 
@@ -28,8 +28,7 @@ Atrae las partículas hacia el cursor o las repele lejos de él. Es fuerte de ce
 
 **Vórtice:** 
 
->Aplica un impulso perpendicular a la dirección radial, haciendo que las partículas giren en espiral alrededor del punto central en lugar de ir en línea recta.
-
+Aplica un impulso perpendicular a la dirección radial, haciendo que las partículas giren en espiral alrededor del punto central en lugar de ir en línea recta.
 
 **Fricción (Drag):** 
 
@@ -59,7 +58,7 @@ Coordina el movimiento colectivo como un cardumen de peces mediante ondas trigon
 
 Mide la concentración de partículas en una grilla 3D y empuja la materia desde las zonas muy pobladas hacia las áreas más vacías.
 
-**CONTROLES**:
+**🌿CONTROLES**:
 
 | Tecla / Acción | Efecto Principal en la Simulación |
 | :--- | :--- |
@@ -84,27 +83,27 @@ Mide la concentración de partículas en una grilla 3D y empuja la materia desde
 
 - ✨ **Ficha de fuerzas**
 
-* **Fuerza Radial (Atracción / Repulsión):**
+**🌿Fuerza Radial (Atracción / Repulsión):**
   Calcula un vector unitario hacia el atractor y escala la magnitud inversamente al cuadrado de la distancia, sumando un término de suavizado (`softening`) en el denominador para evitar divisiones por cero[span_0](start_span)[span_0](end_span):
   
   `F_radial = ((p_attractor - p) / (||p_attractor - p|| + 0.0001)) * (Strength / (||p_attractor - p||^2 + softening^2)) * radialEnabled`[span_1](start_span)[span_1](end_span)
 
-* **Vórtice (Rotación Tangencial):**
+**🌿Vórtice (Rotación Tangencial):**
   Aplica el producto cruz entre el vector unitario del eje Z (`vec3(0, 0, 1)`) y la dirección radial, generando una fuerza perpendicular que induce una rotación en espiral[span_2](start_span)[span_2](end_span):
   
   `F_vortex = (z_axis x r_dir) * vortexStrength * vortexEnabled`[span_3](start_span)[span_3](end_span)
 
-* **Fricción / Drag (Resistencia Lineal):**
+**🌿Fricción / Drag (Resistencia Lineal):**
   Fuerza de frenado directamente opuesta al vector de velocidad actual y proporcional al coeficiente de arrastre[span_4](start_span)[span_4](end_span):
   
   `F_drag = -1.0 * v * dragCoefficient * dragEnabled`[span_5](start_span)[span_5](end_span)
 
-* **Viento:**
+**🌿Viento:**
   Vector tridimensional constante que aplica una aceleración uniforme a todo el sistema[span_6](start_span)[span_6](end_span):
   
   `F_wind = Vector3(wind.x, wind.y, wind.z) * windEnabled`[span_7](start_span)[span_7](end_span)
 
-* **Atractor de Lorenz (Sistema Caótico):**
+**🌿Atractor de Lorenz (Sistema Caótico):**
   Evalúa el sistema de ecuaciones diferenciales continuas de Lorenz con las constantes `sigma = 10`, `rho = 28` y `beta = 8/3`[span_8](start_span)[span_8](end_span):
   
   `dx/dt = sigma * (y - x)`[span_9](start_span)[span_9](end_span)  
@@ -112,23 +111,23 @@ Mide la concentración de partículas en una grilla 3D y empuja la materia desde
   `dz/dt = x * y - beta * z`[span_11](start_span)[span_11](end_span)  
   `F_lorenz = (v_lorenz - v) * lorenzStrength * lorenzEnabled`[span_12](start_span)[span_12](end_span)
 
-* **Curl Noise (Turbulencia Incompresible):**
+**🌿Curl Noise (Turbulencia Incompresible):**
   Calcula el rotacional de un campo escalar de ruido Perlin 3D (`mx_noise_vec3`) mediante aproximación por diferencias finitas[span_13](start_span)[span_13](end_span). Garantiza divergencia cero (`div(F) = 0`), simulando un fluido incompresible sin puntos de colapso[span_14](start_span)[span_14](end_span):
   
   `F_curl = rotacional(A) = (dAz/dy - dAy/dz, dAx/dz - dAz/dx, dAy/dx - dAx/dy) * curlStrength * curlEnabled`[span_15](start_span)[span_15](end_span)
 
-* **Onda de Choque / Pulse Wave:**
+**🌿Onda de Choque / Pulse Wave:**
   Onda esférica concéntrica cuyo radio crece linealmente con el tiempo (`r_wave = (time * speed) mod maxRadius`)[span_16](start_span)[span_16](end_span). La magnitud sobre las partículas sigue una atenuación con distribución gaussiana[span_17](start_span)[span_17](end_span):
   
   `F_pulse = dir_pulse * exp(-((dist - r_wave)^2) / width^2) * (pulseStrength / (1.0 + 0.15 * dist)) * pulseEnabled`[span_18](start_span)[span_18](end_span)
 
-* **Flujo de Bandada / Boids Flow Field:**
+**🌿Flujo de Bandada / Boids Flow Field:**
   Genera un campo de velocidad continuo basado en funciones trigonométricas entrelazadas en los tres ejes sin calcular vecindades $O(N^2)$[span_19](start_span)[span_19](end_span):
   
   `v_flow = Vector3(sin(y * k + t), cos(z * k + t), sin(x * k + t)) * 2.5`[span_20](start_span)[span_20](end_span)  
   `F_boids = (v_flow - v) * boidsStrength * boidsEnabled`[span_21](start_span)[span_21](end_span)
 
-* **Presión por Densidad (Grilla 3D / Spatial Hash):**
+**🌿Presión por Densidad (Grilla 3D / Spatial Hash):**
   Primero acumula la masa de partículas por celda en una grilla de $16 \times 16 \times 16$[span_22](start_span)[span_22](end_span). Luego calcula el gradiente negativo de densidad (`-grad(rho)`) mediante diferencias finitas para empujar las partículas hacia las zonas de menor concentración[span_23](start_span)[span_23](end_span):
   
   `grad_x = (rho[x+1,y,z] - rho[x-1,y,z]) / 2`[span_24](start_span)[span_24](end_span)  
