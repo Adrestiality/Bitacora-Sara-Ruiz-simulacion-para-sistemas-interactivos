@@ -7,7 +7,7 @@
 >
 
 ## ✨ **Mapa del sistema**
-
+<a name="evidencia1"></a>
 **🌿ESTADOS**:
 
 **🔹Morfing entre Geometrías:** 
@@ -19,7 +19,7 @@ Cambia de forma (Esfera, Cubo o Reloj de Arena) mediante una interpolación suav
 Permite congelar la simulación o reiniciar las velocidades y posiciones a su distribución geométrica base.
 
 **🌿FÍSICAS**
-
+<a name="evidencia3"></a>
 **🔹Radial (Atracción/Repulsión):** 
 
 Atrae las partículas hacia el cursor o las repele lejos de él. Es fuerte de cerca, débil de lejos e incluye un suavizado para evitar velocidades infinitas en el centro.
@@ -79,7 +79,7 @@ Mide la concentración de partículas en una grilla 3D y empuja la materia desde
 | **Mover Cursor** | Actualiza la posición del **Atractor / Helper 3D** proyectado sobre el plano Z = 0 mediante Raycasting |
 
 ## ✨ **Ficha de fuerzas**
-
+<a name="evidencia2"></a>
 **🔹Fuerza Radial (Atracción / Repulsión):**
 
 Calcula un vector unitario hacia el atractor y escala la magnitud inversamente al cuadrado de la distancia, sumando un término de suavizado (`softening`) en el denominador para evitar divisiones por cero
@@ -143,7 +143,7 @@ Primero acumula la masa de partículas por celda en una grilla.Luego calcula el 
 
 
 ## ✨ **Registro de pruebas**
-
+<a name="evidencia5"></a>
 La verdad es que este trabajo loe mpece 3 veces. Y las 4 versiones con tematicas muy diferentes. asi que las pruebas adjuntadas tendran cosas de las tres versiones. au que algunas cosas no quedaron en el final
 
 Se que la gracia de esta seccion del registro de pruebas es poner diferentes tests individuales pq el resto de cosas va a ir en la biatcora de la ia pero considere que seria interesante poner aqui todas las veriones de mi sufrimiento y dolor 
@@ -232,7 +232,7 @@ eventualmente logre algunas fisicas de manera propia, como aplicar graverdad y q
 <img width="929" height="882" alt="Captura de pantalla 2026-08-19 193326" src="https://github.com/user-attachments/assets/a80ddeb1-e51f-43a2-af02-91ff42c86e4d" />
 
 ## ✨ **Score visual**
-
+<a name="evidencia4"></a>
 Desde que empece el trabajo queria lograr un efecto muy etereo y liquido con las partidulas. reconozco que me encantan los efectos como corrientes, telarañas... todo lo que sean lineas que pareciera que conectan las personas, aunque lamentablemente no pude lograr este objetivo debido a que perdia demasiado tiempo peleando con la ia y que tambien con mucha facilidad la ia dañaba los codigos y parecia no poder arreglarlos. 
 
 Asi que cambie mi objetivo a querer que al menos los efectos que causara se parecieran a ese trend de cuando te daban un baño de mirella o escarcha y que hubiese MUCHO REBOTE para que las fisicas se vieran mas como sifueran miles de pelotas rebotando 
@@ -269,10 +269,10 @@ mi favorito es el lorenz atractor porque crea formas acoticas hermosas. parece u
 
 | Criterio | Peso | Qué debe demostrar la evidencia | Evidencias | Valoración |
 | :--- | :---: | :--- | :--- | :---: |
-| **Trazabilidad y comprensión del sistema** | 25 | Puedo señalar y explicar estado, fuerzas, integración, render y controles; además puedo ubicar qué partes produjo o modificó la IA. | | 100 |
-| **Verificación del algoritmo de fuerzas** | 25 | Estudie en detalle el proyecto y aunque no comprenda toda la sintaxis, puedo identificar su arquitectura, sus partes, puedo aislar una fuerza central, formular una predicción, la ejecuté ya analicé, comparé el resultado, cambié deliberadamente un signo o parámetro y expliqué la diferencia. | | 20 |
-| **Diseño de fuerzas e intención** | 20 | Las fuerzas y sus parámetros hacen perceptible una intención; el comportamiento surge de la dinámica y no de trayectorias previamente dibujadas. | | 100 |
-| **Instrumento, score e interpretación** | 15 | El score conecta la escucha con decisiones; escogí pocos controles expresivos y puedo conducir el sistema en vivo sin que el audio lo controle automáticamente. | |70|
-| **Experimentación y criterio frente a la IA** | 10 | Comparé alternativas, registré hallazgos y descartes, corregí propuestas de IA y puedo justificar por qué conservé la versión presentada. | | 100|
-| **Entrega técnica y documentación** | 5 | La URL pública abre; la bitácora permite verificar el proceso. | |80|
+| **Trazabilidad y comprensión del sistema** | 25 | Puedo señalar y explicar estado, fuerzas, integración, render y controles; además puedo ubicar qué partes produjo o modificó la IA. |[evidencia 1](#evidencia1) | 100 |
+| **Verificación del algoritmo de fuerzas** | 25 | Estudie en detalle el proyecto y aunque no comprenda toda la sintaxis, puedo identificar su arquitectura, sus partes, puedo aislar una fuerza central, formular una predicción, la ejecuté ya analicé, comparé el resultado, cambié deliberadamente un signo o parámetro y expliqué la diferencia. |[evidencia 2](#evidencia2) | 20 |
+| **Diseño de fuerzas e intención** | 20 | Las fuerzas y sus parámetros hacen perceptible una intención; el comportamiento surge de la dinámica y no de trayectorias previamente dibujadas. |[evidencia 3](#evidencia3) | 100 |
+| **Instrumento, score e interpretación** | 15 | El score conecta la escucha con decisiones; escogí pocos controles expresivos y puedo conducir el sistema en vivo sin que el audio lo controle automáticamente. |[evidencia 4](#evidencia4) |70|
+| **Experimentación y criterio frente a la IA** | 10 | Comparé alternativas, registré hallazgos y descartes, corregí propuestas de IA y puedo justificar por qué conservé la versión presentada. |[evidencia 5](#evidencia5) | 100|
+| **Entrega técnica y documentación** | 5 | La URL pública abre; la bitácora permite verificar el proceso. |[evidencia 5](#evidencia5) |80|
 | **Total Puntos** | **100** | | | 4.08 |
