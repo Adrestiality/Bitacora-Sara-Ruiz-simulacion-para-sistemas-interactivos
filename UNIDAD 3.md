@@ -265,7 +265,7 @@ La verdad considero que solo es pertinente hablar de los prompts que gemini que 
 
 mi favorito es el lorenz atractor porque crea formas acoticas hermosas. parece un simbolo de infinito. definitivamente lo tuve que dejar
 
-- ✨ **Autoevaluación ponderada**
+## ✨ **Autoevaluación ponderada**
 
 | Criterio | Peso | Qué debe demostrar la evidencia | Evidencias | Valoración |
 | :--- | :---: | :--- | :--- | :---: |
