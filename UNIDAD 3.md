@@ -212,7 +212,7 @@ Eventualmente los presets originales dejaron de funcionar por algun motivo, y cu
 
 entonces decidi quedarme con los archivos que solo modificaban las particulas con las figuras y lo de los clicks y volver a empezaaaaaaaaaaar
 
-**🔹PRUEBA 4 **
+**🔹PRUEBA 4**
 
 Aqui, insisto. deje de preocuparme por hacer un diseño con significado. ya solo queria una amalgama de interacciones que se viera eterea y ya
 
@@ -245,14 +245,34 @@ cuando se mueven de manera alocada y rebotan es porque son intensas. si se empie
 
 ya ya. y la cancion a que va? la propuesta de diseño es para la cancion no para el significado que yo quisiera hacer
 
+la verdad es que la cancion me parece horrible. tiene cambios muy abruptos y el ritmo me parece detestable. COMO LA VIDA EN GENERAAAAAAAAL y que afecta los sentimientos? el titmo particular que lleva personalmente cada persona en su vida
+
+sisi bueno. ese es el significado perosnal que yo le queria dar a este trabajo. pero yo se que si no digo esto nadie lo va a ver de la manera en que yo lo hago. asi que analicemos la cancion en si
+
+LesAlpx, como ya dije, tiene mucho cambio de ritmo pero con cosas muy monotonas. tipo, hay muchos sonidos definidos desde el mero inicio pero sus cambios son tan cosntrastantes y abruptos que muchas veces no se pueden predecir bien aunque sean reconocibles. Me gusta que mis particulas reboten demasiado porque siento que se adhieren bastante bien al tema del contraste y lo poco predecible, aunque es muy obvio que una pelota va a rebotar, nunca sabes hacia donde
+
+me encanta mi codigo cuando cambia de figuira. el codigo llego a distorsionarse tanto que cuando cambiaba de figura hacia unos rebotes raros, pero queda excesivamente bien con la musica. asi que sera mi recurso cuando suenan esos soniditos agudos contrastantes en medio de la nada
+
 ## ✨ **Bitácora de IA**
 
->
->uwu
->
+La verdad considero que solo es pertinente hablar de los prompts que gemini que definieron las ultimas fisicas que se añadieron al proyecto :P
+
+<img width="971" height="487" alt="Captura de pantalla 2026-08-20 223536" src="https://github.com/user-attachments/assets/451f73f8-280c-4a21-bfe2-765eb94fb572" />
+<img width="945" height="458" alt="Captura de pantalla 2026-08-20 223541" src="https://github.com/user-attachments/assets/173562c5-b7a3-4b95-a907-1ebea4f8c236" />
+<img width="901" height="392" alt="Captura de pantalla 2026-08-20 223545" src="https://github.com/user-attachments/assets/3bef462d-610c-4c91-a039-a538a4eb2500" />
+<img width="909" height="461" alt="Captura de pantalla 2026-08-20 223550" src="https://github.com/user-attachments/assets/c20effb8-4824-41ff-b01c-a96eb584e213" />
+<img width="987" height="370" alt="Captura de pantalla 2026-08-20 223554" src="https://github.com/user-attachments/assets/9fda542f-a7f5-4995-bd61-f03897e0f3b8" />
+
+mi favorito es el lorenz atractor porque crea formas acoticas hermosas. parece un simbolo de infinito. definitivamente lo tuve que dejar
 
 - ✨ **Autoevaluación ponderada**
 
->
->uwu
->
+| Criterio | Peso | Qué debe demostrar la evidencia | Evidencias | Valoración |
+| :--- | :---: | :--- | :--- | :---: |
+| **Trazabilidad y comprensión del sistema** | 25 | Puedo señalar y explicar estado, fuerzas, integración, render y controles; además puedo ubicar qué partes produjo o modificó la IA. | | 100 |
+| **Verificación del algoritmo de fuerzas** | 25 | Estudie en detalle el proyecto y aunque no comprenda toda la sintaxis, puedo identificar su arquitectura, sus partes, puedo aislar una fuerza central, formular una predicción, la ejecuté ya analicé, comparé el resultado, cambié deliberadamente un signo o parámetro y expliqué la diferencia. | | 20 |
+| **Diseño de fuerzas e intención** | 20 | Las fuerzas y sus parámetros hacen perceptible una intención; el comportamiento surge de la dinámica y no de trayectorias previamente dibujadas. | | 100 |
+| **Instrumento, score e interpretación** | 15 | El score conecta la escucha con decisiones; escogí pocos controles expresivos y puedo conducir el sistema en vivo sin que el audio lo controle automáticamente. | |70|
+| **Experimentación y criterio frente a la IA** | 10 | Comparé alternativas, registré hallazgos y descartes, corregí propuestas de IA y puedo justificar por qué conservé la versión presentada. | | 100|
+| **Entrega técnica y documentación** | 5 | La URL pública abre; la bitácora permite verificar el proceso. | |80|
+| **Total Puntos** | **100** | | | 4.08 |
