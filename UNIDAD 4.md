@@ -1,15 +1,15 @@
-# UNIDAD 4
+# ☄️UNIDAD 4
 
 - **Repositorio de la Actividad:** [REPOSITORIO_UNIDAD4_SIMULACION](https://github.com/Adrestiality/REPOSITORIO_UNIDAD4_SIMULACION)
 - **Despliegue de la Actividad:** [Ver Actividad Interactiva](https://adrestiality.github.io/REPOSITORIO_UNIDAD4_SIMULACION/)
 
-## 1. Generación de Ideas y Propuesta
+## 🌟1.Ideación
 
 Para el proceso de esta actividad me costó mucho pensar en una propuesta. La temática de sonido me parecía muy entretenida y con muchas posibilidades, pero admito que me costó bastante dar con una idea. 
 
 Eventualmente me inspiré en el trabajo de uno de mis compañeros, que consistía en una cuadrícula en 3D. De ahí tomé la base de la cuadrícula 3D y me acordé de un juego que se llama *Monument Valley*, que es de perspectivas, muy geométrico pero muy minimalista. Pensé: *"¿y qué tal si usamos ambas cosas?"*. Sumándole a eso mis conocimientos de 3D, donde el modelado consiste mucho en extruir caras y polígonos, decidí mezclar todo esto.
 
-### La propuesta
+### Propuesta
 La idea es empezar con un plano. De ese plano puedes extruir pilares para ir construyendo una torre, y puedes extruir diferentes tipos de pilares, ya sean verticales u horizontales. 
 
 Mezclándolo con las necesidades de este reto de diseño:
@@ -27,12 +27,12 @@ Por eso añadí un agente más: un **bichito** (que en realidad es como una boli
 
 
 
-## 2. Proceso de Creación
+## 🌟2. Proceso de Creación
 
-### Repositorio y Servidor
+### Repositorio
 Decidí reutilizar el repositorio de la unidad anterior para tener la página web lista. El servidor funcionaba muy bien, así que valía la pena aprovecharlo.
 
-### Proceso con la IA
+### IA
 Como suelo tener bastantes conflictos con varias IAs (Gemini, ChatGPT, Claude, etc.), decidí hacer lo siguiente por recomendación de los demás:
 1. Le expliqué detalladamente mi idea a ChatGPT y le dije que me hiciera **todas las preguntas que quisiera** para que entendiera bien lo que quería lograr.
 2. Abrí Blender, hice unos modelos 3D rápidos y se los pasé a ChatGPT para que tuviera súper claro el concepto visual.
@@ -49,7 +49,7 @@ Como suelo tener bastantes conflictos con varias IAs (Gemini, ChatGPT, Claude, e
 <img width="1280" height="1600" alt="8" src="https://github.com/user-attachments/assets/14d8d6c0-5893-4bcf-a599-2eba10c5fb88" />
 
 
-### Ajustes y pulido
+### Ajustes
 Obviamente, después de pasar los prompts a AntiGravity quedaron cosas por pulir y me tocó hacer varios prompts adicionales:
 * El bichito no salió negro como quería, sino lila.
 * Las proporciones no se calculaban bien y por algún motivo los cubos se cruzaban al ponerlos.
@@ -63,19 +63,17 @@ Obviamente, después de pasar los prompts a AntiGravity quedaron cosas por pulir
 <img width="567" height="742" alt="Captura de pantalla 2026-09-07 234550" src="https://github.com/user-attachments/assets/398ee253-52f1-456b-a6a0-097ed72d27d1" />
 
 
-## 3. ¿Cómo funciona el juego?
+## 🌟3.¿Cómo funciona el juego?
 
 La actividad interactiva consiste en crear pilares para que el bichito los recorra y suba, haciendo que todos los pilares resuenen en conjunto sin que se destruya la torre. Si el bichito se queda más de 6 segundos quieto, destruye la torre, cae al suelo y toca empezar de nuevo.
 
 ### Los Pilares
 Tú no puedes elegir exactamente qué pilar poner; te salen de manera aleatoria (como si fueran cartas):
-* **Verticales (4 tipos):** de 4, 3, 2 y 1 casilla.
-* **Horizontales (3 tipos):** de 3, 2 y 1 casilla.
+* **Verticales (4 tipos):** de 4, 3, 2 y 1 casillas.
+* **Horizontales (3 tipos):** de 3, 2 y 1 casillas.
 * Cada tipo se diferencia por un **color diferente**.
 
-
-
-## 4. Controles e Interfaz
+## 🌟4. Controles e Interfaz
 
 * **Cambio de Eje:** Para los pilares horizontales, puedes cambiar su eje con una tecla especial al momento de insertarlos.
 * **Saltar Pieza:** Si no quieres usar el pilar que te salió, puedes saltar a la siguiente pieza, pero no puedes elegir cuál te va a salir.
@@ -95,4 +93,12 @@ Tú no puedes elegir exactamente qué pilar poner; te salen de manera aleatoria 
 <img width="1012" height="757" alt="Captura de pantalla 2026-09-08 155305" src="https://github.com/user-attachments/assets/e6e53ae7-de51-4b3d-91ea-c6b72b0987c6" />
 <img width="377" height="862" alt="Captura de pantalla 2026-09-07 235940" src="https://github.com/user-attachments/assets/f2f3f0ab-1c3e-41ab-bf55-a3a036073acb" />
 
+## 🌟5. Autoevaluación
 
+| Criterio / Autoevaluación | Puntaje |
+| :--- | :---: |
+| Leí y verifiqué que mi proyecto cumple con los requisitos mínimos de la unidad. | **25 pts** |
+| Puedo explicar claramente qué representa cada variable del modelo de Kuramoto en mi proyecto. | **25 pts** |
+| Puedo explicar claramente cómo las variables del modelo producen el comportamiento observado en mi proyecto. | **25 pts** |
+| Puedo demostrar que mi proyecto cumple con los objetivos establecidos en la unidad. | **25 pts** |
+| **Puntaje Total** | **100 pts** |
