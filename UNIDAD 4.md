@@ -2,7 +2,7 @@
 
 - **Despliegue de la Actividad:** [Ver Actividad Interactiva](https://adrestiality.github.io/REPOSITORIO_UNIDAD4_SIMULACION/)
 
-## 🌟1.Ideación
+## 🌟1. Ideación
 
 La verdad es que el proceso de ideación fue una completa locura y caos, porque la unidad me parecía muy interesante, proponía mucha libertad y posibilidad de hacer muchas cosas nuevas. PERO NO SABÍA QUÉ HACEEEEEEEEEEER.
 
