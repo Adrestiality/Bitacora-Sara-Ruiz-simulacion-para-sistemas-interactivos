@@ -1,42 +1,22 @@
 # ☄️UNIDAD 4
 
-- **Repositorio de la Actividad:** [REPOSITORIO_UNIDAD4_SIMULACION](https://github.com/Adrestiality/REPOSITORIO_UNIDAD4_SIMULACION)
 - **Despliegue de la Actividad:** [Ver Actividad Interactiva](https://adrestiality.github.io/REPOSITORIO_UNIDAD4_SIMULACION/)
 
 ## 🌟1.Ideación
 
-Para el proceso de esta actividad me costó mucho pensar en una propuesta. La temática de sonido me parecía muy entretenida y con muchas posibilidades, pero admito que me costó bastante dar con una idea. 
+La verdad es que el proceso de ideacion fue una completa locura y caos. porque la unidad me parecia muy interesante, proponia mucha libertad y posibilidad de hacer muchas cosas nuevas. PERO NO SABIA QUE HACEEEEEEEEEEER. 
 
-Eventualmente me inspiré en el trabajo de uno de mis compañeros, que consistía en una cuadrícula en 3D. De ahí tomé la base de la cuadrícula 3D y me acordé de un juego que se llama *Monument Valley*, que es de perspectivas, muy geométrico pero muy minimalista. Pensé: *"¿y qué tal si usamos ambas cosas?"*. Sumándole a eso mis conocimientos de 3D, donde el modelado consiste mucho en extruir caras y polígonos, decidí mezclar todo esto.
+La verdad es que termine inspirada en el trabajo de un amiguito que tenia una especie de maya 3d, lo que me llevo a pernsar en el entorno 3d, y luego pense en un juego llamado monument valley que es muy minimalista y trata principalmente sobre la perspectiva y el mundo 3d.
 
-### Propuesta
-La idea es empezar con un plano. De ese plano puedes extruir pilares para ir construyendo una torre, y puedes extruir diferentes tipos de pilares, ya sean verticales u horizontales. 
+La idea es la isguiente. eciste un plano y un pequeño bichito negro por ahi caminando. delos cuadors de dicho plano puedes crear pilares verticales y horizontales de longitudes aleatorias y todos empiezan a resonar. la gracia es que crees tu propia torre y el bichito ira escalandola tratandose de sumar a la melodia. si el bichito deja de moverse pq ya no hay mas pilares para escalar, va  adestruir todo lo que hay de torre. imaginatelo como esos problemas de la vida que siempre estan ahi pero que te pueden estancar y destruir todo de golpe si dejas que esten mucho tiempo.
 
-Mezclándolo con las necesidades de este reto de diseño:
-* Cada pilar es un agente diferente dependiendo de su longitud y su posición.
-* Cada uno tiene ritmos y tiempos diferentes dentro de la ecuación del muro.
-* La idea es que a medida que añades pilares, estos terminen sincronizándose en una melodía.
-
-### El bichito (el antagonista)
-Luego de analizarlo varias veces e incluso hablarlo con el docente, llegamos a la idea de que se estaba formando un jueguito donde tú creas tu propia torre. Sin embargo, sentía que le faltaba una motivación para seguir jugando. 
-
-Por eso añadí un agente más: un **bichito** (que en realidad es como una bolita llena de ojitos). Es como el problema o el antagonista, pero no porque sea malo, sino porque es algo con lo que tienes que aprender a lidiar:
-* El bichito también es un agente y una parte decisiva de la mezcla. Empieza a escalar los pilares a medida que los vas creando.
-* Si pasa mucho tiempo en un pilar o en un conjunto de pilares (más de 6 segundos quieto/estable), los destruye. Su capacidad es destruir cuando la cosa se vuelve monótona.
-* Cuando destruye la estructura, cae al piso y le toca a uno volver a escalar y construir.
-
-
+Si lo vemos desde la perspectiva de la actividad, la gracia es que los pilares y el bicho resuenan de manera distinta. deberan hacer lo posible para unificarse en una melodia sin parar demasiado tiempo.
 
 ## 🌟2. Proceso de Creación
 
-### Repositorio
-Decidí reutilizar el repositorio de la unidad anterior para tener la página web lista. El servidor funcionaba muy bien, así que valía la pena aprovecharlo.
+Aqui genuinamente decidi reutilizar el repositorio de la unidad anterior. es bastante util la verdad. 
 
-### IA
-Como suelo tener bastantes conflictos con varias IAs (Gemini, ChatGPT, Claude, etc.), decidí hacer lo siguiente por recomendación de los demás:
-1. Le expliqué detalladamente mi idea a ChatGPT y le dije que me hiciera **todas las preguntas que quisiera** para que entendiera bien lo que quería lograr.
-2. Abrí Blender, hice unos modelos 3D rápidos y se los pasé a ChatGPT para que tuviera súper claro el concepto visual.
-3. Le pedí a ChatGPT que me armara **6 prompts progresivos** para pasárselos a AntiGravity y que hiciera el código paso a paso con base en lo que discutimos.
+Luego decidi seguir la recomendacion de mis amiguitas. que es sentarse con chat gpt y explicarle el proyecto de manera super detallada y con dibujitos como funciona mi idea, y que luego el hiciera los prompts oara antigravity. genuinamente esta es la parte donde todo me da mucha más pereza.
 
 <img width="1280" height="1600" alt="1" src="https://github.com/user-attachments/assets/62ebf901-a5cf-4c00-9491-9e0025c1c4e9" />
 <img width="1280" height="1600" alt="2" src="https://github.com/user-attachments/assets/3ad5f8b6-8abb-47fc-b83e-039898106a7c" />
@@ -48,15 +28,7 @@ Como suelo tener bastantes conflictos con varias IAs (Gemini, ChatGPT, Claude, e
 <img width="1280" height="1600" alt="8" src="https://github.com/user-attachments/assets/720043b4-1b5d-4dfa-83c6-18f8999fc84f" />
 <img width="1280" height="1600" alt="8" src="https://github.com/user-attachments/assets/14d8d6c0-5893-4bcf-a599-2eba10c5fb88" />
 
-
-### Ajustes
-Obviamente, después de pasar los prompts a AntiGravity quedaron cosas por pulir y me tocó hacer varios prompts adicionales:
-* El bichito no salió negro como quería, sino lila.
-* Las proporciones no se calculaban bien y por algún motivo los cubos se cruzaban al ponerlos.
-* A veces el bichito explotaba y se salía de la cuadrícula.
-* El bichito no sonaba (y se suponía que era un agente de sonido).
-* Los sonidos de la torre eran bonitos pero muy lentos, entonces le faltaba dinamismo y ritmo.
-* Los pilares eran bastante difíciles de poner al inicio.
+Luego de pasar todo a antigravity tuve que rehacer ajustes tecnicos. como, por ejemplo, el bichito se salia del margen de la cuadricula y era como bro??
 
 <img width="327" height="432" alt="Captura de pantalla 2026-09-06 214724" src="https://github.com/user-attachments/assets/fa1c9288-a5ba-4a8a-8523-19d14f3b853e" />
 <img width="562" height="443" alt="Captura de pantalla 2026-09-07 234545" src="https://github.com/user-attachments/assets/ff0be1ba-894d-4f5b-a36e-8d2809b7489e" />
