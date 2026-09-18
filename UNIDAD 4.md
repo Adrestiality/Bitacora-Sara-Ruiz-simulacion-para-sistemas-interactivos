@@ -4,19 +4,19 @@
 
 ## 🌟1.Ideación
 
-La verdad es que el proceso de ideacion fue una completa locura y caos. porque la unidad me parecia muy interesante, proponia mucha libertad y posibilidad de hacer muchas cosas nuevas. PERO NO SABIA QUE HACEEEEEEEEEEER. 
+La verdad es que el proceso de ideación fue una completa locura y caos, porque la unidad me parecía muy interesante, proponía mucha libertad y posibilidad de hacer muchas cosas nuevas. PERO NO SABÍA QUÉ HACEEEEEEEEEEER.
 
-La verdad es que termine inspirada en el trabajo de un amiguito que tenia una especie de maya 3d, lo que me llevo a pernsar en el entorno 3d, y luego pense en un juego llamado monument valley que es muy minimalista y trata principalmente sobre la perspectiva y el mundo 3d.
+La verdad es que terminé inspirada en el trabajo de un amiguito que tenía una especie de malla 3D, lo que me llevó a pensar en el entorno 3D, y luego pensé en un juego llamado Monument Valley que es muy minimalista y trata principalmente sobre la perspectiva y el mundo 3D.
 
-La idea es la isguiente. eciste un plano y un pequeño bichito negro por ahi caminando. delos cuadors de dicho plano puedes crear pilares verticales y horizontales de longitudes aleatorias y todos empiezan a resonar. la gracia es que crees tu propia torre y el bichito ira escalandola tratandose de sumar a la melodia. si el bichito deja de moverse pq ya no hay mas pilares para escalar, va  adestruir todo lo que hay de torre. imaginatelo como esos problemas de la vida que siempre estan ahi pero que te pueden estancar y destruir todo de golpe si dejas que esten mucho tiempo.
+La idea es la siguiente. Existe un plano y un pequeño bichito negro por ahí caminando. Desde los cuadros de dicho plano puedes crear pilares verticales y horizontales de longitudes aleatorias y todos empiezan a resonar. La gracia es que crees tu propia torre y el bichito irá escalándola tratando de sumarse a la melodía. Si el bichito deja de moverse porque ya no hay más pilares para escalar, va a destruir todo lo que hay de torre. Imagínatelo como esos problemas de la vida que siempre están ahí pero que te pueden estancar y destruir todo de golpe si dejas que estén mucho tiempo.
 
-Si lo vemos desde la perspectiva de la actividad, la gracia es que los pilares y el bicho resuenan de manera distinta. deberan hacer lo posible para unificarse en una melodia sin parar demasiado tiempo.
+Si lo vemos desde la perspectiva de la actividad, la gracia es que los pilares y el bicho resuenan de manera distinta. Deberán hacer lo posible para unificarse en una melodía sin parar demasiado tiempo.
 
 ## 🌟2. Proceso de Creación
 
-Aqui genuinamente decidi reutilizar el repositorio de la unidad anterior. es bastante util la verdad. 
+Aquí genuinamente decidí reutilizar el repositorio de la unidad anterior. Es bastante útil la verdad.
 
-Luego decidi seguir la recomendacion de mis amiguitas. que es sentarse con chat gpt y explicarle el proyecto de manera super detallada y con dibujitos como funciona mi idea, y que luego el hiciera los prompts oara antigravity. genuinamente esta es la parte donde todo me da mucha más pereza.
+Luego decidí seguir la recomendación de mis amiguitas, que es sentarse con ChatGPT y explicarle el proyecto de manera súper detallada y con dibujitos cómo funciona mi idea, y que luego él hiciera los prompts para Antigravity. Genuinamente esta es la parte donde todo me da mucha más pereza.
 
 <img width="1280" height="1600" alt="1" src="https://github.com/user-attachments/assets/62ebf901-a5cf-4c00-9491-9e0025c1c4e9" />
 <img width="1280" height="1600" alt="2" src="https://github.com/user-attachments/assets/3ad5f8b6-8abb-47fc-b83e-039898106a7c" />
@@ -28,7 +28,7 @@ Luego decidi seguir la recomendacion de mis amiguitas. que es sentarse con chat 
 <img width="1280" height="1600" alt="8" src="https://github.com/user-attachments/assets/720043b4-1b5d-4dfa-83c6-18f8999fc84f" />
 <img width="1280" height="1600" alt="8" src="https://github.com/user-attachments/assets/14d8d6c0-5893-4bcf-a599-2eba10c5fb88" />
 
-Luego de pasar todo a antigravity tuve que rehacer ajustes tecnicos. como, por ejemplo, el bichito se salia del margen de la cuadricula y era como bro??
+Luego de pasar todo a Antigravity tuve que rehacer ajustes técnicos. Como, por ejemplo, el bichito se salía del margen de la cuadrícula y era como bro?
 
 <img width="327" height="432" alt="Captura de pantalla 2026-09-06 214724" src="https://github.com/user-attachments/assets/fa1c9288-a5ba-4a8a-8523-19d14f3b853e" />
 <img width="562" height="443" alt="Captura de pantalla 2026-09-07 234545" src="https://github.com/user-attachments/assets/ff0be1ba-894d-4f5b-a36e-8d2809b7489e" />
