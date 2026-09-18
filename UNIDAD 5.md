@@ -54,4 +54,4 @@ La verdad es que dado que ya no tenía más créditos, no podía hacer prompts p
 | Relaciones estructurales: puedo explicar qué relaciones existen en mi sistema, qué significan y cómo organizan sus elementos. | **10 pts** |
 | Comportamiento y significado: puedo relacionar los cambios de movimiento, estructura, densidad o composición con una intención comunicativa. | **15 pts** |
 | Explicación y demostración: puedo presentar la propuesta funcionando, explicar mis decisiones y demostrar cómo el sistema construye sentido. | **15 pts** |
-| **Puntaje Total** | **60 pts** |
+| **Puntaje Total** | **3** |
