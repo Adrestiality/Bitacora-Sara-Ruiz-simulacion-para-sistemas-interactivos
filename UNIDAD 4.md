@@ -73,4 +73,4 @@ Tú no puedes elegir exactamente qué pilar poner; te salen de manera aleatoria 
 | Puedo explicar claramente qué representa cada variable del modelo de Kuramoto en mi proyecto. | **25 pts** |
 | Puedo explicar claramente cómo las variables del modelo producen el comportamiento observado en mi proyecto. | **25 pts** |
 | Puedo demostrar que mi proyecto cumple con los objetivos establecidos en la unidad. | **25 pts** |
-| **Puntaje Total** | **100 pts** |
+| **Puntaje Total** | **5** |
